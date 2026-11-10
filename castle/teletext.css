@@ -1,0 +1,60 @@
+/* Broadcast palette and flat 40-column-page rhythm. */
+:root{--blue:#00f;--cream:#fff;--ink:#fff;--deep:#ff0;--orange:#f80;--yellow:#ff0}
+body{background:#000;color:#fff;font:16px/1.65 CastlePixel,monospace}
+body:before,.box:before{display:none}
+.box{max-width:1080px;margin:0 auto;border:0;background:#000;box-shadow:none}
+.blue,.paper{background:#000}
+main>*{position:relative}
+.broadcast{display:flex;justify-content:space-between;gap:12px;padding:10px 16px;font-size:13px;line-height:1.5;color:#fff;flex-wrap:wrap}
+.broadcast strong{color:#0ff;font-weight:normal}.broadcast time{color:#ff0}
+nav{background:#00f;border:0;color:#ff0;padding:12px 16px;font-size:12px;line-height:1.8;align-items:flex-start}
+nav div{gap:16px}nav a:hover{color:#fff}
+.hero{display:block;padding:25px 16px 20px}
+.hero>div{display:block}.hero .eyebrow{color:#0f0}
+.hero h1{font-family:CastlePixel,monospace;font-size:clamp(48px,10vw,112px);line-height:1.2;letter-spacing:0;color:#ff0;margin:8px 0 20px}
+.hero h1:first-letter{color:#ff0}
+.hero .tagline{font:18px/1.6 CastlePixel,monospace;color:#0ff;max-width:55ch;margin:0 0 18px}
+.hero .tagline+p{font-size:14px;color:#fff;max-width:70ch}
+.hero .stamp{background:#00f;color:#ff0;border:0;padding:8px 12px;font-size:12px;margin:0 0 18px}
+.hero .actions{display:flex;gap:15px;align-items:center;margin-bottom:18px}
+.button{cursor:pointer;background:#00f;border:0;border-radius:0;box-shadow:none;color:#ff0;font:13px/1.5 CastlePixel,monospace;text-decoration:none;padding:12px 16px}
+.button.alt{border:0;background:#000;color:#0ff;text-decoration:underline}
+.button:hover,.button:focus-visible{background:#ff0;color:#000}
+.get-castle{display:block;font-size:clamp(19px,3.8vw,32px);padding:17px 24px;background:#0f0;color:#000}
+.hero .compat{font:11px/1.8 CastlePixel,monospace;color:#ff0}
+.reference-strip{margin:0 16px 25px;border:2px solid #0ff}.reference-strip figcaption{border-color:#0ff;color:#0ff;font-size:10px}.reference-strip img{width:100%}
+.paper{padding:15px 16px 30px}
+.chapter{border:0;padding-top:0;margin-bottom:42px!important}
+.section-label{background:#00f;color:#fff;padding:7px 10px;font:11px/1.6 CastlePixel,monospace;letter-spacing:0;margin-bottom:18px}
+h2,.community-row h2,.back h2{font:clamp(21px,3vw,32px)/1.5 CastlePixel,monospace;color:#ff0;margin-bottom:16px}
+h3{font:18px/1.5 CastlePixel,monospace;color:#0f0}
+.intro{font-size:16px;line-height:1.8;color:#0ff}.columns{gap:30px}
+.columns p{font-size:14px;line-height:1.8}
+.warning{color:#ff0;border:0;padding:12px 0;font-size:14px}
+.stats{border:0;background:#00f;padding:20px 12px;gap:12px}
+.stats strong{font:28px/1.5 CastlePixel,monospace;color:#ff0}.stats span{color:#fff;font-size:10px}
+.timbres{color:#0f0;font-size:20px}.timbres strong{font:28px/1.4 CastlePixel,monospace;color:#ff0}.fine{color:#fff;font-size:10px}
+table{font-size:12px}th{background:#00f;color:#ff0;border:0;padding:12px 8px}td{border-bottom:2px solid #00f;padding:15px 8px;color:#0ff}td:first-child{color:#fff}caption{color:#0f0}
+.dot{box-shadow:none}.b{background:#00f;border-color:#fff}.g{background:#0f0}.w{background:#fff}.o{background:#f80}
+.pushes{font-size:12px}.pushes strong{color:#ff0}
+.installation{font-size:13px}.installation li:before{background:#00f;border:0;color:#ff0}.installation a{color:#0ff}
+.install-layout{display:block;max-width:78ch}.install-layout h3{margin-top:25px}
+code{background:#000;color:#ff0;font-size:1em}
+.back{border:0;padding:20px 16px 35px}.back .eyebrow{color:#0f0}.back p{font-size:13px}.back img{border:2px solid #0ff;filter:none}
+.community{border:0;padding-top:0}.community-row{border:0;padding:0;margin-bottom:38px}
+.empty-review{background:#000;border:0;border-left:4px solid #00f;padding:5px 16px}.empty-review strong{color:#0f0}
+.contact-address{color:#0ff;font-size:clamp(12px,2.3vw,20px)}
+.donation-status{color:#ff0;border:0;border-left:4px solid #00f;padding:8px 12px}
+footer{border:0;border-top:8px solid #00f;color:#fff;font-size:9px;padding:20px 16px}footer a{color:#0ff}
+.download-dialog{background:#000;color:#fff;border:6px solid #00f;padding:0;width:min(640px,calc(100% - 28px));max-height:calc(100dvh - 35px);overflow:auto;font:14px/1.8 CastlePixel,monospace}
+.download-dialog::backdrop{background:#000c}
+.dialog-header{display:flex;justify-content:space-between;align-items:center;gap:15px;background:#00f;padding:9px 14px;color:#ff0;font-size:13px}
+.close-dialog{background:#000;color:#fff;border:0;padding:6px 10px;font:12px CastlePixel,monospace;cursor:pointer}
+.dialog-content{padding:22px}.dialog-content h2{font-size:26px}.download-choices{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0}
+.download-choices .button{padding:18px 12px;text-align:center;background:#0f0;color:#000}
+.download-choices .button:nth-child(2){background:#ff0}
+.download-choices .button:hover{background:#0ff}
+.dialog-status{color:#ff0;border-top:3px solid #00f;padding-top:16px;margin-top:20px}
+.dialog-status[hidden]{display:none}
+.noscript-download{color:#0ff}
+@media(max-width:760px){body{font-size:14px}.broadcast{font-size:10px}nav{font-size:10px}.hero .tagline{font-size:15px}.hero .actions{align-items:stretch;flex-direction:column}.get-castle{text-align:center}.reference-strip{overflow:auto}.reference-strip img{min-width:680px}.reference-strip figcaption{min-width:680px}.stats{grid-template-columns:1fr 1fr}.stats strong{font-size:25px}.columns{gap:16px}.download-choices{grid-template-columns:1fr}.dialog-content{padding:16px}.download-dialog{font-size:12px}}

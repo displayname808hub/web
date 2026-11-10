@@ -1,0 +1,41 @@
+/* The supplied front and back sleeve are the primary visual material. */
+:root{--yellow:#f3d543;--deep:#e5ce63;--cream:#eee5c4}
+body{background:#192838;color:var(--cream);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6}
+.box{max-width:1320px;background:#657e98;margin:22px auto;border:6px solid #b7b59d;box-shadow:0 20px 80px #0006}
+.broadcast{background:#21394e;color:#e8dfc1;font-family:CastlePixel,monospace;font-size:10px}.broadcast strong{color:var(--yellow)}
+nav{background:#304a65;color:#f1db77;font-family:CastlePixel,monospace;font-size:10px}
+.hero{display:grid;grid-template-columns:1.08fr 1fr;gap:clamp(25px,5vw,68px);padding:42px;align-items:center;background:radial-gradient(ellipse at 90% 0%,#c3cadc40,transparent 60%),#657e98}
+.hero .cover{display:block;transform:none;margin:0;border:1px solid #c2b99a;box-shadow:9px 12px 0 #2e455d66}
+.hero>div{display:block}.hero .eyebrow{font:11px/1.7 CastlePixel,monospace;color:#f0e5bc}
+.hero h1{font:900 clamp(80px,11vw,146px)/1 Impact,'Arial Narrow',sans-serif;letter-spacing:-4px;text-transform:none;margin:10px 0 22px;color:var(--yellow)}.hero h1:first-letter{color:#e8a543}
+.hero .tagline{font:700 clamp(24px,3vw,37px)/1.15 Arial,sans-serif;color:#fff0c8;letter-spacing:-.8px;max-width:22ch}
+.hero .tagline+p{font:17px/1.6 Arial,sans-serif;color:#192737;max-width:42ch}
+.hero .stamp{font:700 11px/1.5 CastlePixel,monospace;background:#c83c65;color:#fff1d2;display:inline-block;transform:rotate(-2deg);margin:8px 0 24px}
+.hero .actions{align-items:stretch;flex-direction:column;max-width:400px}.get-castle{background:#f3d543;color:#172b40;font-size:clamp(18px,2.7vw,27px);border:2px solid #263b50;padding:19px 22px}
+.hero .compat{font:11px/1.8 CastlePixel,monospace;color:#e4e4d4}
+.button{background:#eee5c4;color:#23374c;border:1px solid #243a50;font:12px/1.7 CastlePixel,monospace}.button:hover{background:#f3d543;color:#172b40}.button.alt{background:transparent;color:inherit;border:1px solid #314c65}
+.paper{background-color:#e8e2bf;background-image:radial-gradient(#6e58301a .65px,transparent .85px);background-size:4px 4px;color:#252924;padding:40px 42px}
+.section-label{font:10px/1.8 CastlePixel,monospace;letter-spacing:0;background:transparent;color:#425a70;padding:0;margin-bottom:16px}
+h2,.community-row h2,.back h2{font:900 clamp(30px,4vw,48px)/1.1 Impact,'Arial Narrow',sans-serif;color:#294563;text-transform:none}
+h3{font:800 23px/1.2 Arial,sans-serif;color:#294563}.intro{font:700 23px/1.45 Arial,sans-serif;color:#293a47}
+.columns p{font:16px/1.6 Arial,sans-serif}.warning{color:#a34831;border-left:4px solid #be693f;padding-left:18px;font:700 16px/1.6 Arial,sans-serif}
+.stats{background:none;border-top:2px solid #3e453d;border-bottom:1px solid #3e453d55;padding:20px 0}
+.stats strong{color:#c16b3e;font:900 43px/1.1 Impact,sans-serif}.stats span{color:#2b3029;font:700 13px Arial,sans-serif}.timbres{color:#2b3029;font:800 26px/1.4 Arial,sans-serif}.timbres strong{color:#c16b3e;font:900 42px Impact,sans-serif}.fine{font:12px/1.6 Arial,sans-serif;color:#45504d}
+.chapter{border:0;margin-bottom:50px!important}caption{color:#3c5369;font:12px/1.6 CastlePixel,monospace}
+table{font:15px/1.5 Arial,sans-serif}th{background:#314e6a;color:#fff0b1;font:10px/1.6 CastlePixel,monospace}td{color:#263a49;border-color:#354f6555}td:first-child{color:#243849}
+.pushes{font:14px/1.6 Arial,sans-serif}.pushes strong{color:#294563}.installation{font:15px/1.6 Arial,sans-serif}.installation a{color:#264d70}.installation li:before{background:#314e6a;color:#fff0b1}code{font:13px monospace;color:#294563;background:#657e981c}
+.screens{padding:32px 42px 45px;background:#304961;color:#e8e2bf;border-top:1px solid #b8bbad}
+.screens .section-label{color:#e4c55b}.screens h2{color:#f1d43e}.screen-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:25px}
+.screen-card{margin:0}.screen-window{display:block;position:relative;aspect-ratio:250/128;overflow:hidden;border:1px solid #d8cfac;background:#080b09}
+.screen-window img{position:absolute;width:365.6%;max-width:none;height:auto;left:-17.2%;top:-195.3125%;image-rendering:auto}
+.screen-window.fire img{top:-355.46875%}.screen-window.log img{top:-517.1875%}
+.screen-card figcaption{padding-top:15px;font:14px/1.6 Arial,sans-serif}.screen-card strong{display:block;font:12px/1.6 CastlePixel,monospace;color:#e8ce70;margin-bottom:7px}
+.screens .fine{color:#bfc9c7;margin:22px 0 0}
+.sleeve-section{padding:42px;display:grid;grid-template-columns:1fr 1.08fr;gap:50px;align-items:center;background:#657e98;color:#172b3e}
+.sleeve-section h2{color:#f1d43e}.sleeve-section .section-label{color:#eee5c4}
+.sleeve-back{margin:0}.sleeve-back img{width:100%;height:auto;border:1px solid #c7bea5;box-shadow:9px 12px 0 #2e455d66}
+.sleeve-back figcaption{font:11px/1.6 CastlePixel,monospace;color:#e8e2bf;margin-top:17px}
+.community{border-top:2px solid #314e6a;padding-top:27px}.community-row{padding:25px 0;margin:0;border-bottom:1px solid #314e6a44}.community-row p{font-size:16px}.empty-review{border-left:4px solid #bc703f}.empty-review strong{color:#294563}.contact-address{color:#294563;font-size:20px}.donation-status{color:#76542d}
+footer{background:#304961;border-top:1px solid #c3bda0;color:#d2d8ce;font:11px/1.6 Arial,sans-serif}footer a{color:#fff0bd}
+.download-dialog{font:13px/1.8 CastlePixel,monospace}.download-dialog h2{font:23px/1.5 CastlePixel,monospace;color:#ff0}.download-dialog .fine{color:#ddd}.download-dialog .button{background:#0f0;color:#000;border:0}.download-choices .button:nth-child(2){background:#ff0}
+@media(max-width:760px){.box{margin:0;border-width:4px}.hero{display:flex;flex-direction:column;padding:25px 22px 35px;gap:30px;align-items:stretch}.hero .cover{display:block;max-width:490px;align-self:center}.hero h1{font-size:90px}.hero .tagline{max-width:28ch}.hero .actions{max-width:none}.hero .tagline+p{font-size:16px}.screens{padding:30px 22px}.screen-grid{grid-template-columns:1fr;gap:30px}.screen-window{max-width:560px}.sleeve-section{grid-template-columns:1fr;padding:32px 22px;gap:28px}.sleeve-back{max-width:520px;margin:auto}.paper{padding:32px 22px}.intro{font-size:20px}.contact-address{font-size:clamp(14px,4vw,20px)}.broadcast{font-size:9px}table{font-size:14px}}
