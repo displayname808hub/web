@@ -4,6 +4,17 @@ body:before{content:'';position:fixed;inset:0;z-index:998;pointer-events:none;ba
 .page{box-shadow:0 0 22px #b9d3b91a,5px 5px 0 #0006;transform-origin:50% 35%;animation:crt-warp 11s linear infinite}
 .page header h1{text-shadow:0 1px 3px #b59a5433}
 .download-dialog{background-image:none}
+/* Keep the native dialog top layer free of transformed CRT/compositor layers. */
+html.download-open body:before,html.download-open body:after{display:none}
+html.download-open .page{animation:none;transform:none;perspective:none;filter:none}
+html.download-open .wandering-sigil{animation:none}
+.download-dialog{position:fixed;inset:0;margin:auto;transform:none;filter:none;perspective:none;isolation:isolate;max-width:calc(100vw - 24px);max-height:calc(100dvh - 24px)}
+.download-dialog::backdrop{position:fixed;inset:0;background:rgba(0,0,0,.5);animation:none;transform:none}
+.download-dialog .dialog-content,.download-dialog .window-bar{position:relative;transform:none;opacity:1;visibility:visible}
+.download-dialog .window-bar{min-height:28px}
+.download-dialog .download-choices{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.download-dialog .retro-button{min-width:0;white-space:normal}
+@media(max-width:420px){.download-dialog .download-choices{grid-template-columns:minmax(0,1fr)}}
 #welcome-title{line-height:1.5;margin-bottom:18px}
 @keyframes crt-sync{from{background-position:0 150%}to{background-position:0 -150%}}
 @keyframes crt-warp{0%,28%,31%,73%,76%,100%{transform:perspective(1800px) rotateY(.12deg) skewX(0deg)}29%{transform:perspective(1800px) rotateY(-.12deg) skewX(.1deg) translateX(.6px)}30%{transform:perspective(1800px) rotateY(.12deg) skewX(-.08deg) translateX(-.5px)}74%{transform:perspective(1800px) rotateY(-.1deg) skewX(-.09deg) translateX(-.7px)}75%{transform:perspective(1800px) rotateY(.1deg) skewX(.08deg) translateX(.4px)}}

@@ -16,7 +16,16 @@
   const donationNote = document.querySelector('#donation-note');
   opener.addEventListener('click', () => {
     donationNote.hidden = true;
-    dialog.showModal();
+    document.documentElement.classList.add('download-open');
+    try {
+      dialog.showModal();
+    } catch (error) {
+      document.documentElement.classList.remove('download-open');
+      throw error;
+    }
+  });
+  dialog.addEventListener('close', () => {
+    document.documentElement.classList.remove('download-open');
   });
   dialog.querySelector('[data-close]').addEventListener('click', () => dialog.close());
   dialog.querySelector('[data-donate-choice]').addEventListener('click', () => {
