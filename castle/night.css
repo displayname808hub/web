@@ -2,7 +2,7 @@ body{background-color:#000;background-image:radial-gradient(circle,#eee6cf 0 1px
 .page{position:relative;z-index:1}
 .medieval-parade{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0 14px;min-height:60px}
 .medieval-parade picture{display:block;flex:none;background:#000;border:1px solid #938164}
-.medieval-parade img{display:block;image-rendering:pixelated;width:100%;height:auto}
+.medieval-parade img{display:block;image-rendering:auto;width:100%;height:auto}
 .medieval-parade .horse{width:77px}.medieval-parade .shield{width:49px}
 .medieval-parade .mirrored{transform:scaleX(-1)}
 .medieval-parade span{font:11px 'Courier New',monospace;color:#695873;text-align:center}

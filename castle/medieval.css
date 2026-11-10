@@ -1,6 +1,6 @@
 .castle-banner{display:flex;align-items:center;justify-content:center;gap:18px;margin:5px auto 8px}
 .castle-banner picture{display:block;width:115px;flex:0 0 115px;background:#000;border:2px ridge #b7a46b}
-.castle-banner img{display:block;width:100%;height:auto;image-rendering:pixelated}
+.castle-banner img{display:block;width:100%;height:auto;image-rendering:auto}
 .castle-banner h1{margin:0}
 .medieval-divider{text-align:center;color:#87702a;font-size:18px;line-height:1;margin:13px 0}
 @media(max-width:500px){.castle-banner{gap:9px}.castle-banner picture{width:65px;flex-basis:65px}.castle-banner h1{font-size:40px}}
