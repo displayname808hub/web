@@ -1,0 +1,18 @@
+/* A few impossible details in a small personal homepage. */
+body{background-color:#10152f;background-image:radial-gradient(ellipse at 20% 20%,#51414744,transparent 40%),radial-gradient(#e0d7ae 1px,transparent 1px),radial-gradient(#586184 1px,transparent 1px);background-size:auto,87px 73px,43px 61px}
+.page{background-color:#eae5d4;background-image:radial-gradient(ellipse at 100% 5%,#a1b5b933,transparent 38%);border-color:#b6afa2}
+.castle-banner{position:relative}
+.castle-banner picture:last-child{transform:rotate(180deg);border-color:#8b8372}
+.castle-banner h1{font-style:italic;text-shadow:2px 2px #e4c755,5px 5px #526c7b33}
+.strange-weather{display:flex;align-items:center;justify-content:center;gap:16px;margin:6px auto 10px;max-width:500px;min-height:44px}
+.strange-weather p{font:11px/1.5 'Courier New',monospace;text-align:left;margin:0;color:#55536c}
+.watching-moon{position:relative;display:block;width:37px;height:37px;border:1px solid #626477;border-radius:50%;background:#d4ceaf;box-shadow:inset -10px -4px #909db766;flex:0 0 37px}
+.watching-moon:before{content:'';position:absolute;width:24px;height:12px;left:6px;top:11px;border:1px solid #3a4154;border-radius:70% 15% 70% 15%;transform:rotate(25deg);background:#f5edcd}
+.watching-moon i{position:absolute;left:16px;top:14px;width:6px;height:7px;border-radius:50%;background:#283751}
+.wandering-sigil{font:16px/9px Georgia,serif;color:#6b596f;transform:rotate(-13deg);animation:drift 7s ease-in-out infinite}
+.artwork a:nth-child(2){transform:rotate(1deg)}.artwork a:first-child{transform:rotate(-1deg)}
+.medieval-divider{font-size:15px;letter-spacing:6px;color:#726175}
+.community{grid-template-columns:1.2fr 1fr}
+@keyframes drift{0%,100%{transform:translateY(0) rotate(-13deg)}50%{transform:translateY(-5px) rotate(4deg)}}
+@media(max-width:650px){.community{grid-template-columns:1fr}.strange-weather{gap:10px}.strange-weather p{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.wandering-sigil{animation:none}}
