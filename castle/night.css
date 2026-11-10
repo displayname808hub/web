@@ -1,0 +1,15 @@
+body{background-color:#000;background-image:radial-gradient(circle,#eee6cf 0 1px,transparent 1.5px),radial-gradient(circle,#91b8d9 0 1px,transparent 1.4px),radial-gradient(circle,#b49b56 0 .7px,transparent 1.2px);background-size:127px 113px,191px 173px,61px 89px;background-position:0 0,49px 37px,19px 61px}
+.page{position:relative;z-index:1}
+.lightning{position:fixed;top:4vh;width:130px;height:75vh;pointer-events:none;z-index:0;opacity:.1;background:#c1defd;clip-path:polygon(67% 0,28% 30%,55% 29%,12% 61%,40% 56%,4% 100%,83% 48%,54% 51%,92% 19%,59% 22%);animation:sky-lightning 18s linear infinite}
+.lightning.left{left:max(8px,calc((100vw - 1210px)/2));transform:rotate(8deg)}
+.lightning.right{right:max(8px,calc((100vw - 1210px)/2));transform:scaleX(-1) rotate(8deg);animation-delay:8s;top:18vh}
+@keyframes sky-lightning{0%,77%,82%,100%{opacity:.045}78%{opacity:.55}79%,81%{opacity:.17}80%{opacity:.32}}
+.medieval-parade{display:flex;align-items:center;justify-content:center;gap:12px;margin:8px 0 14px;min-height:60px}
+.medieval-parade picture{display:block;flex:none;background:#000;border:1px solid #938164}
+.medieval-parade img{display:block;image-rendering:pixelated;width:100%;height:auto}
+.medieval-parade .horse{width:77px}.medieval-parade .shield{width:49px}
+.medieval-parade .mirrored{transform:scaleX(-1)}
+.medieval-parade span{font:11px 'Courier New',monospace;color:#695873;text-align:center}
+@media(max-width:650px){.medieval-parade{gap:7px}.medieval-parade .horse{width:58px}.medieval-parade .shield{width:38px}.medieval-parade span{font-size:9px}.lightning{width:65px;opacity:.08}}
+@media(max-width:390px){.medieval-parade .shield{display:none}}
+@media(prefers-reduced-motion:reduce){.lightning{animation:none;opacity:.12}}
