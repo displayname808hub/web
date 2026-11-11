@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="night.css">
 <link rel="stylesheet" href="crt.css">
 <link rel="stylesheet" href="fire.css">
+<link rel="stylesheet" href="clock.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -26,6 +27,10 @@
 <div class="strange-weather"><span class="watching-moon" aria-hidden="true"><i></i></span><p>Forecast from inside the synth:<br><em>low clouds, high feedback, occasional gravity.</em></p><span class="wandering-sigil" aria-hidden="true">◇<br>│<br>∞</span></div>
 <nav aria-label="Page navigation"><a href="#trailer">Trailer</a> | <a href="#screenshots">Screenshots</a> | <a href="#controls">Controls</a> | <a href="#install">Install</a> | <a href="#contact">Contact</a></nav>
 </header>
+<section class="castle-clock" aria-label="Local clock and virtual sunrise and sundown">
+<div class="clock-time"><span class="clock-label">Time outside the castle</span><time id="local-clock">--:--:--</time><span id="clock-zone" class="small">Your local time</span><span id="clock-date" class="small"></span></div>
+<div class="sky-clock"><div class="clock-sky" id="clock-sky"><span class="sky-star star-one" aria-hidden="true">·</span><span class="sky-star star-two" aria-hidden="true">✦</span><span class="sky-star star-three" aria-hidden="true">·</span><span class="sky-orb" id="sky-orb" aria-hidden="true">☀</span><span class="sky-castle" aria-hidden="true">♜</span><span class="sky-ground" aria-hidden="true"></span></div><div class="sun-times"><span>☀ Sunrise <b>06:00</b></span><span>☾ Sundown <b>18:00</b></span></div><p class="small"><span id="sky-phase">Virtual sky</span> · simulated cycle, local time</p></div>
+</section>
 <hr>
 <section class="welcome" aria-labelledby="welcome-title">
 <div class="artwork">
@@ -93,4 +98,5 @@
 <div id="donation-note" class="donation-note" tabindex="-1" hidden><p>Thank you! Ko-fi opens in a new tab. You can download Castle here whenever you’re ready.</p><a class="retro-button" href="downloads/castle.opmod" download>Download Castle</a></div>
 </div></dialog>
 <script src="download.js" defer></script>
+<script src="clock.js" defer></script>
 </body></html>
