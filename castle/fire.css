@@ -1,0 +1,5 @@
+.fire-greeting{display:flex;align-items:center;justify-content:center;gap:14px;margin:3px auto 9px;height:42px}
+.fire-greeting picture{display:block;flex:0 0 40px;width:40px;background:#000}
+.fire-greeting img{display:block;width:100%;height:auto}
+.fire-greeting span{font-size:24px;line-height:1;letter-spacing:5px}
+@media(max-width:500px){.fire-greeting{height:34px;gap:10px}.fire-greeting picture{flex-basis:32px;width:32px}.fire-greeting span{font-size:21px}}
