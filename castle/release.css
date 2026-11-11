@@ -1,3 +1,6 @@
+.release-announcement{margin:5px 0 10px}
+.release-announcement a{display:inline-block;padding:5px 13px;background:#263655;color:#fff0a3;border:2px outset #bbab71;font:bold 14px/1.4 'Times New Roman',serif;text-decoration:none}
+.release-announcement a:hover{background:#384b6e;color:#fff}
 .release-art{float:right;width:210px;max-width:42%;margin:0 0 12px 18px}
 .release-art img{display:block;width:100%;height:auto;border:1px solid #6a7258;background:#000}
 .release-art figcaption{font-size:11px;line-height:1.4;text-align:center;margin-top:5px}
