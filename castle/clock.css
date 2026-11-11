@@ -1,5 +1,9 @@
-.castle-clock{max-width:260px;margin:12px auto 5px;border:2px inset #c3bdab;background:#e1decd;padding:7px 13px}
+.medieval-parade .castle-clock{flex:0 1 230px;min-width:0;max-width:260px;margin:0;border:2px inset #c3bdab;background:#e1decd;padding:7px 10px}
 .clock-time{display:flex;flex-direction:column;text-align:center;gap:2px}
 .clock-label{font:11px 'Times New Roman',serif;color:#53536a}
 .clock-time time{font:700 24px/1.25 'Courier New',monospace;color:#243557;font-variant-numeric:tabular-nums}
 .clock-time .small{font-size:10px}
+.medieval-parade .clock-time span{font-family:inherit;color:inherit}
+.medieval-parade .clock-time .clock-label{font:11px 'Times New Roman',serif;color:#53536a}
+.medieval-parade .clock-time .small{font-size:10px;color:#51514b;overflow-wrap:anywhere}
+@media(max-width:500px){.medieval-parade .castle-clock{padding:5px;flex-basis:190px}.clock-time time{font-size:19px}.medieval-parade .clock-time .clock-label{font-size:10px}.medieval-parade .clock-time .small{font-size:9px}}
