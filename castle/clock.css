@@ -1,10 +1,5 @@
-.castle-clock{display:grid;grid-template-columns:1fr 1.4fr;gap:17px;align-items:center;max-width:550px;margin:14px auto 5px;border:2px inset #c3bdab;background:#e1decd;padding:9px 13px}
-.clock-time{display:flex;flex-direction:column;text-align:center;gap:2px}.clock-label{font:11px 'Times New Roman',serif;color:#53536a}.clock-time time{font:700 24px/1.25 'Courier New',monospace;color:#243557;font-variant-numeric:tabular-nums}.clock-time .small{font-size:10px}
-.clock-sky{height:49px;position:relative;overflow:hidden;border:1px solid #726d69;background:linear-gradient(#9db6c5,#e8d2a3)}
-.clock-sky[data-phase="night"]{background:linear-gradient(#10152e,#393752)}
-.clock-sky[data-phase="dawn"],.clock-sky[data-phase="dusk"]{background:linear-gradient(#615c84,#dd946c,#f0d392)}
-.sky-ground{position:absolute;left:0;right:0;bottom:0;height:5px;background:#637258}.sky-castle{position:absolute;left:46%;bottom:1px;font-size:25px;line-height:1;color:#2e3b3f}
-.sky-orb{position:absolute;left:10%;top:65%;font-size:21px;line-height:1;color:#ffe365;transform:translate(-50%,-50%);text-shadow:0 0 6px #ffc45c}.clock-sky[data-phase="night"] .sky-orb{color:#f3edd0;text-shadow:0 0 4px #d4deef77}
-.sky-star{position:absolute;display:none;color:#e6e1cf;font-size:15px;line-height:1}.star-one{left:15%;top:7px}.star-two{left:80%;top:7px}.star-three{left:60%;top:15px}.clock-sky[data-phase="night"] .sky-star{display:block}
-.sun-times{display:flex;justify-content:space-between;gap:8px;font-size:10px;margin-top:4px}.sky-clock p{font-size:9px;text-align:center;margin:4px 0 0}
-@media(max-width:450px){.castle-clock{gap:10px;padding:8px;grid-template-columns:1fr 1.25fr}.clock-time time{font-size:20px}.clock-label{font-size:10px}.sun-times{font-size:9px;gap:4px}}
+.castle-clock{max-width:260px;margin:12px auto 5px;border:2px inset #c3bdab;background:#e1decd;padding:7px 13px}
+.clock-time{display:flex;flex-direction:column;text-align:center;gap:2px}
+.clock-label{font:11px 'Times New Roman',serif;color:#53536a}
+.clock-time time{font:700 24px/1.25 'Courier New',monospace;color:#243557;font-variant-numeric:tabular-nums}
+.clock-time .small{font-size:10px}
