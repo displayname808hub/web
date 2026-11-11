@@ -25,7 +25,7 @@
 <p class="tagline">A microcosm on your OP-1 where exploration has consequences.</p>
 <p class="opus-exclusive"><a href="https://opus-op1.pages.dev/" target="_blank" rel="noopener noreferrer" style="color:inherit"><strong>EXCLUSIVE TO OPUS ↗</strong></a> · Original OP-1</p>
 <div class="strange-weather"><span class="watching-moon" aria-hidden="true"><i></i></span><p>Forecast from inside the synth:<br><em>low clouds, high feedback, occasional gravity.</em></p><span class="wandering-sigil" aria-hidden="true">◇<br>│<br>∞</span></div>
-<nav aria-label="Page navigation"><a href="#trailer">Trailer</a> | <a href="#screenshots">Screenshots</a> | <a href="#controls">Controls</a> | <a href="#install">Install</a> | <a href="#contact">Contact</a></nav>
+<nav aria-label="Page navigation"><a href="#release">New in 1.1</a> | <a href="#trailer">Trailer</a> | <a href="#screenshots">Screenshots</a> | <a href="#controls">Controls</a> | <a href="#install">Install</a> | <a href="#contact">Contact</a></nav>
 </header>
 <hr>
 <section class="welcome" aria-labelledby="welcome-title">
@@ -37,10 +37,10 @@
 <p id="welcome-title"><strong>Welcome to Castle, a small and strange world running on your OP-1. It is a synthesizer you can play and a castle you can explore, where every turn of a knob is heard and seen, and somebody inside always has an opinion about it.</strong></p>
 <button class="download-main retro-button" type="button" data-open-download aria-haspopup="dialog" aria-controls="download-dialog">★ Get Castle — free download ★</button>
 <noscript><p><a href="downloads/castle.opmod" download>Download Castle free</a></p></noscript>
-<p class="small">Castle 1.0 · Original OP-1 firmware 246 · OPUS core 2.29+</p>
+<p class="small">Castle 1.1 · Original OP-1 firmware 246 · OPUS core 2.31+</p>
 </div>
 </section>
-<p class="specs">8 algorithms · 20 ratio sets · 1,517 dialogue lines and 30,000+ audibly different timbres.</p>
+<p class="specs">8 algorithms · 25 ratio sets · 1,822 dialogue lines and 30,000+ audibly different timbres.</p>
 <hr>
 <div class="media-row"><section id="screenshots" aria-labelledby="screens-title">
 <h2 id="screens-title">Screenshots from the OP-1</h2>
@@ -57,22 +57,31 @@
 <p class="small"><a href="https://www.youtube.com/shorts/wO64MH7UQ24" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></p>
 </section></div>
 <div class="manual">
+<details id="release" open>
+<summary>★ Castle 1.1 is out — news from the kingdom</summary>
+<p><b>Kingdom Statistics.</b> Tap Help on T1 to see time played, fires started, fire time, deaths, kings killed, longest reign, sacrifices, executions, horses electrocuted, revolts and elections. The ledger starts from zero each time you switch to Castle.</p>
+<p><b>A king and politics.</b> The king sentences villagers to execution. Elections happen every 40–70 minutes; ties are settled by drawing straws. Each fire during a reign makes the people more likely to turn on their king. Executions, fires and loud noise raise unrest, which can boil over into a revolt.</p>
+<p><b>Five new ratio sets.</b> Green adds sub odd and high odd harmonics, drum membrane, root-three glass and stiff wire. Across eight algorithms, that’s 40 new sound combinations. Existing presets retain their previous ratio selection and sound.</p>
+<p><b>More life in the log.</b> 316 new dialogue lines and six new jobs for the villagers. Knob remarks are less repetitive.</p>
+<p class="small">Castle 1.1 requires OPUS core 2.31 or newer.</p>
+</details>
 <details id="controls">
 <summary>Controls &amp; sound guide</summary>
 <p>Four-operator FM, a sine sub an octave below, saturation, noise with drop-outs, ring modulation and sample-rate reduction.</p>
 <div class="table-wrap"><table><caption>T1 — turn an encoder, or hold shift and turn</caption><thead><tr><th scope="col">Knob</th><th scope="col">Turn</th><th scope="col">Shift + turn</th></tr></thead><tbody>
 <tr><th scope="row"><i class="dot blue"></i>Blue</th><td>FM: fade operators 2, 3 and 4 into operator 1</td><td>Eight algorithms</td></tr>
-<tr><th scope="row"><i class="dot green"></i>Green</th><td>Twenty operator ratio sets</td><td>Pitch modulation, up to 4 Hz / one semitone</td></tr>
+<tr><th scope="row"><i class="dot green"></i>Green</th><td>25 operator ratio sets (20 in presets made before 1.1)</td><td>Pitch modulation, up to 4 Hz / one semitone</td></tr>
 <tr><th scope="row"><i class="dot white"></i>White</th><td>Operator 4 feedback</td><td>Noise / mild sample-rate reduction</td></tr>
 <tr><th scope="row"><i class="dot orange"></i>Orange</th><td>Saturation (and fire)</td><td>Ring modulation / kaleidoscope moat</td></tr>
 </tbody></table></div>
+<p><b>Tap Help (FN) on T1:</b> show / hide Kingdom Statistics.</p>
 <p><b>White push:</b> show / hide the log. <b>Orange push:</b> drone mode on / off. With drone mode off, notes fade for three seconds after release.</p>
 <p class="small">Castle shapes its own level; ADSR and velocity do not affect it. T2 lists controls. T4 LFOs can animate the main knobs, algorithm, ring modulator and reducer.</p>
 </details>
 <details id="install">
 <summary>How to install OPUS &amp; Castle</summary>
 <p><b>First, OPUS:</b></p>
-<ol><li>Visit the <a href="https://opus-op1.pages.dev/" target="_blank" rel="noopener noreferrer">official OPUS website</a> and download OPUS.</li><li>Back up your OP-1 and follow the current installation guide there.</li><li>Check that OPUS core is 2.29 or newer. Castle is for the original OP-1, firmware 246.</li></ol>
+<ol><li>Visit the <a href="https://opus-op1.pages.dev/" target="_blank" rel="noopener noreferrer">official OPUS website</a> and download OPUS.</li><li>Back up your OP-1 and follow the current installation guide there.</li><li>Check that OPUS core is 2.31 or newer. Castle is for the original OP-1, firmware 246.</li></ol>
 <p><b>Then, Castle:</b></p>
 <ol><li>Use “Get Castle” above to download <code>castle.opmod</code>.</li><li>Enter Disk Mode. Copy the file into the OP-1’s <code>mods</code> folder.</li><li>Eject safely and restart. Check Castle says “loaded” in the mods list.</li><li>Select Castle as your synth engine and play a key.</li></ol>
 <p class="small">All names and dialogue are built in. No extra text files are needed.</p>
@@ -90,7 +99,7 @@
 <div class="window-bar"><span id="download-title">Castle — download</span><button type="button" data-close aria-label="Close download dialog">×</button></div>
 <div class="dialog-content"><div class="dialog-intro"><span class="disk-icon" aria-hidden="true">▣</span><div><p>The same Castle, either way.</p></div></div>
 <div class="download-choices"><a class="retro-button" href="downloads/castle.opmod" download>Free download</a><a class="retro-button" href="https://ko-fi.com/displayname808" target="_blank" rel="noopener noreferrer" data-donate-choice>Free + donation ♥</a></div>
-<p class="small">Original OP-1 · OPUS core 2.29 or newer.</p>
+<p class="small">Original OP-1 · OPUS core 2.31 or newer.</p>
 <div id="donation-note" class="donation-note" tabindex="-1" hidden><p>Thank you! Ko-fi opens in a new tab. You can download Castle here whenever you’re ready.</p><a class="retro-button" href="downloads/castle.opmod" download>Download Castle</a></div>
 </div></dialog>
 <script src="download.js" defer></script>
