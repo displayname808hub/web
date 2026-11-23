@@ -1,4 +1,4 @@
-:root{--paper:#fff;--ink:#302418;--muted:#67513b;--rule:#b6a174}
+:root{--paper:#fff;--ink:#50351f;--muted:#67513b;--rule:#b6a174}
 body{background-color:#fff;background-image:none;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
 .newspaper{background-color:var(--paper);background-image:none;border-left:0;border-right:0}
 .preview-notice{background:#302418;color:#fff0bc}.preview-notice>span{color:#e3ce96}
