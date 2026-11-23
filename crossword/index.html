@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Crossword: an advanced sequencer for OPUS on the original OP-1, by displayname808. 256 squares. 256 moves.">
+<title>Crossword — A musical crossword for OP-1</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../paper.css">
+<link rel="stylesheet" href="../manual.css">
+<link rel="stylesheet" href="../crossword-background.css">
+<link rel="stylesheet" href="../crossword-download.css">
+</head>
+<body>
+<div class="preview-notice">BUILT FOR OPUS 2 <span>By displayname808</span></div>
+<main class="newspaper">
+<header class="masthead">
+<div class="edition"><a href="../">displayname808</a><span>OP-1 / OPUS 2 · SEQUENCER</span></div>
+<div class="wordmark-row"><h1>Crossword</h1><span class="product-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+<div class="strap"><p>Advanced sequencer for OP-1</p><span>256 squares. 256 moves.</span></div>
+<nav aria-label="Page navigation"><a href="../">Home</a><a href="#trailer">Trailer</a><a href="#cheat-sheet">Cheat sheet</a><a href="#controls">Functions</a><a href="#modifiers">Modifiers</a><a href="#facts">Facts</a><a href="#installation">Installation</a><a href="#correspondence">Contact &amp; support</a><a href="../castle/">Castle</a></nav>
+</header>
+
+<section class="score-hero" aria-labelledby="hero-heading">
+<div class="hero-copy"><h2 id="hero-heading">A musical crossword for OP-1</h2><p>Crossword is a sequencing playground for the adventurous. It combines precise control with happy accidents, and it’s unlike anything ever seen on the OP-1.</p><button class="ink-button get-crossword" type="button" data-open-download aria-haspopup="dialog" aria-controls="crossword-download">Get Crossword</button><p class="hero-footnote">Made for the original OP-1 with OPUS 2.</p></div>
+<figure class="score-art"><div class="tile-composition" id="tile-composition" role="img" aria-label="A musical crossword of symbols, notes and rests, with a blue active strip and green cursor."></div><figcaption class="score-caption"><span>A few notes, out of order.</span><button id="rearrange" type="button">Rearrange</button></figcaption></figure>
+</section>
+<div class="intro-copy"><p>Most step sequencers give you a fixed number of steps; Crossword gives you 256 to explore, played in sections of up to 32. Modifiers, randomization and probability turn even short sequences into dense, evolving patterns.</p></div>
+<div class="spec-strip" aria-label="Sequencer at a glance"><div><strong>256</strong><span>note &amp; rest squares</span></div><div><strong>13</strong><span>ways through</span></div><div><strong>100</strong><span>patterns to make yours</span></div><div><strong>15</strong><span>scales to explore</span></div></div>
+<section class="media-resources" aria-label="Trailer and cheat sheet">
+<article id="trailer"><div class="section-heading"><h2>See it in motion.</h2></div><video class="trailer-player" controls playsinline preload="metadata" poster="../assets/crossword-trailer-poster.webp" width="1080" height="1350" aria-label="Crossword sequencer trailer"><source src="../assets/crossword-trailer.mp4" type="video/mp4"><p><a href="../assets/crossword-trailer.mp4">Watch the Crossword trailer</a></p></video><p class="media-caption">The Crossword trailer · 1 minute 55 seconds.</p></article>
+<article id="cheat-sheet"><div class="section-heading"><h2>Cheat sheet</h2></div><p>Workflow, controls, paths, probability and the modifier key, all on one sheet.</p><a class="cheat-sheet-preview" href="../assets/crossword-cheat-sheet.png" target="_blank" rel="noopener noreferrer" aria-label="Open the Crossword cheat sheet at full size"><img src="../assets/crossword-cheat-sheet.png" width="1448" height="1086" loading="lazy" alt="Two-page illustrated Crossword manual covering the workflow, cursor and playing section, controls, paths, directions, probability and all 20 modifiers."></a><div class="resource-links"><a href="../assets/crossword-cheat-sheet.png" target="_blank" rel="noopener noreferrer">View full size</a><a href="../assets/crossword-cheat-sheet.png" download="crossword-cheat-sheet.png">Download cheat sheet</a></div></article>
+</section>
+<section class="controls-section manual-section" id="controls" aria-labelledby="controls-heading">
+<div class="section-heading"><h2 id="controls-heading">Functions</h2></div>
+<dl class="function-list">
+<div><dt><span class="encoder">1</span> Blue</dt><dd>How many steps play (1 to 32). <b>Shift:</b> the start point (0 to 255). <b>Push:</b> the path menu, with 13 paths and a playback direction (forward, backward, ping pong, random).</dd></div>
+<div><dt><span class="encoder">2</span> Green</dt><dd>Moves the cursor along the grid. <b>Push:</b> makes the cursor step a block (rest) or a note. <b>Shift:</b> moves the cursor a row up or down. <b>Shift with the arrow keys:</b> moves it a square left or right.</dd></div>
+<div><dt><span class="encoder">3</span> White</dt><dd>Step probability (10 to 100 %), or a trig condition when turned right. <b>Shift:</b> modifier probability. <b>Push:</b> the modifier menu.</dd></div>
+<div><dt><span class="encoder">4</span> Orange</dt><dd>The note of the cursor step. <b>Shift + orange:</b> hold on or off. <b>Push:</b> the scale and pattern menu (root, scale, pattern, random new, undo and redo, delete a pattern).</dd></div>
+<div><dt>Keys</dt><dd><b>Sequencer key:</b> turns the sequencer on and off. <b>FN tap:</b> the controls overview.</dd></div>
+</dl><details><summary>Scale, pattern and path menu details</summary><div class="extra-controls"><p><b>Random, undo and redo.</b> In the scale and pattern menu, turn orange to choose “new random”, then push orange to make it. After randomizing, turn orange to choose “undo random”; after undoing, it offers “redo random”. Each choice needs a push to confirm.</p><p><b>Undo belongs to the current pattern.</b> It isn’t saved. Switching patterns, deleting a pattern or restarting clears the undo history.</p><p><b>Choosing a path.</b> A new path moves the cursor to its first step, at the selected start point. Changing only the playback direction leaves the cursor where it is.</p><p><b>Moving around the grid.</b> The view has a fixed size and follows the editing cursor. Shift + green moves a row up or down; shift + the arrow keys moves one square left or right.</p></div></details></section>
+<section class="manual-section" id="probability" aria-labelledby="probability-heading"><div class="section-heading"><h2 id="probability-heading">Probability</h2></div><div class="probability-columns">
+<article><h3>Step probability</h3><p>Each note sounds with its own chance, from 10 to 100 %, in steps of 5. A note that misses is a rest for that step, and the timing stays the same.</p></article>
+<article><h3>Trig conditions</h3><p>A step plays only on certain passes through the section. For example, 1:2 plays on every first pass out of two, and 3:4 on the third pass out of four. A step can have a trig condition or a step probability, not both.</p></article>
+<article><h3>Modifier probability</h3><p>A modifier acts with a chance of 10, 25, 40, 50, 60, 75, 90 or 100 %, rolled each time the step plays. A modifier can also have its own trig condition.</p></article>
+</div></section>
+<section class="manual-section" id="modifiers" aria-labelledby="modifiers-heading"><div class="section-heading"><h2 id="modifiers-heading">Modifiers</h2><p>A little instruction for each square.</p></div><div class="modifier-key">
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#ratchet2"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#ratchet3"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#ratchet4"></use></svg></div><div><h3>Ratchet 2, 3, 4</h3><p>The step plays its note 2, 3 or 4 times, spread evenly across the step.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#hold"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#hold6"></use></svg></div><div><h3>Hold, hold 6</h3><p>The note repeats 3 or 6 times across the step.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#octup1"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#octup2"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#octdown1"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#octdown2"></use></svg></div><div><h3>Octave +1, +2, −1, −2</h3><p>Transposes the note up or down one or two octaves.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#div2"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#div4"></use></svg></div><div><h3>Divide 2, divide 4</h3><p>The step lasts two or four base steps (half or quarter speed).</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#left"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#right"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#up"></use></svg><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#down"></use></svg></div><div><h3>Neighbor left, right, up, down</h3><p>Plays the note of the square beside it on the grid.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#random"></use></svg></div><div><h3>Random note</h3><p>Plays the note of a random white square anywhere in the pattern.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#reset"></use></svg></div><div><h3>Reset</h3><p>After the step plays, playback returns to the first step.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#jump"></use></svg></div><div><h3>Jump</h3><p>After the step plays, playback jumps to a random place on the path for the rest of the section, then returns.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#flip"></use></svg></div><div><h3>Flip direction</h3><p>A roll that can reverse the playback direction.</p></div></article>
+<article class="modifier-entry"><div class="modifier-symbols"><svg class="mod-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="../assets/modifier-icons.svg#pre"></use></svg></div><div><h3>Pre</h3><p>Plays only if the most recent earlier step with a condition (or a probability under 100 %) fired.</p></div></article>
+</div></section>
+<section class="manual-section" id="facts" aria-labelledby="facts-heading"><div class="section-heading"><h2 id="facts-heading">Facts</h2></div><ul class="fact-list">
+<li>100 patterns. Each one is a whole new pattern made from its number.</li>
+<li>15 scales and 12 roots.</li><li>13 paths, 4 playback directions.</li>
+<li>256 start points, sections of 1 to 32 steps.</li>
+<li>20 modifiers, 9 trig conditions (1:2 up to 4:4), 8 modifier chance levels (10 to 100 %), 19 step probability levels (10 to 100 %, in steps of 5).</li>
+<li>Each square holds one of 49 notes (−24 to +24 scale degrees).</li>
+</ul></section>
+<section class="manual-section combinations" aria-labelledby="combinations-heading"><h2 id="combinations-heading">Combinations per pattern</h2><p>Each square can be a block, or a note with one note value, one step probability or trig condition, and either no modifier or one modifier with a chance or a trig condition.</p><p>That is <span class="math">1 + 49 × 28 × 341 = 467,853</span> possibilities per square. A pattern has 256 squares, so it has <span class="math">467,853<sup>256</sup></span>, about <span class="math">10<sup>1452</sup></span>, possible contents. Playback settings (path, direction, start point and section length) add another 425,984 combinations on top of that.</p></section>
+<div class="project-notes"><section aria-labelledby="issues-heading"><h2 id="issues-heading">Known issues</h2><p>OPUS prioritizes audio over graphics. FPS drops can occur when using stock OP-1 engines.</p></section><section aria-labelledby="roadmap-heading"><h2 id="roadmap-heading">Roadmap</h2><p>Parameter locks for synth, drum, envelope and FX pages.</p></section></div>
+<section class="bottom-columns">
+<article id="installation"><span class="small-caps">Getting started</span><h2>On your OP-1.</h2><ol class="install-list"><li>Install the latest version of <a href="https://opus-op1.pages.dev/" target="_blank" rel="noopener noreferrer">OPUS</a> on the original OP-1.</li><li><a href="downloads/crossword.opmod" download="crossword.opmod">Download crossword.opmod</a>, then copy it to the OP-1’s <code>mods</code> folder in Disk Mode. Eject and restart.</li><li>Hold shift and press the sequencer key. Choose <b>crossword</b>, then press a key to play.</li></ol></article>
+<aside class="classifieds" id="correspondence"><span class="small-caps">Say hello</span><h2>Leave a note.</h2><p>Questions, ideas, discoveries?<br><a href="mailto:displayname808@gmail.com">displayname808@gmail.com</a></p><p><a href="https://www.instagram.com/displayname808/" target="_blank" rel="noopener noreferrer">Instagram / displayname808</a><br><a href="https://discord.com/invite/CW2MngTU3Z" target="_blank" rel="noopener noreferrer">The OPUS Discord</a></p><hr><p>Donations always welcome.</p><a class="ink-button small-button" href="https://ko-fi.com/displayname808" target="_blank" rel="noopener noreferrer">Support on Ko-fi</a></aside>
+</section>
+<footer><div class="footer-brand">Crossword<span>by displayname808</span></div><p>Made for OPUS on the original OP-1.<br>Special thanks to LizardMan for OPUS.</p><p class="legal">Independent project. Not affiliated with Teenage Engineering.<br>OP-1 is a trademark of Teenage Engineering AB.</p></footer>
+
+</main>
+<dialog class="download-dialog" id="crossword-download" aria-labelledby="download-title" aria-describedby="download-availability">
+<div class="window-bar"><span id="download-title">Crossword</span><button type="button" data-close-download aria-label="Close download dialog">×</button></div>
+<div class="dialog-content"><div class="download-grid-title" aria-hidden="true"><i></i><span>D</span><span>O</span><span>W</span><span>N</span><span>L</span><span>O</span><span>A</span><span>D</span><i></i></div><p class="dialog-intro">The same Crossword, either way.</p>
+<div class="download-choices"><div class="download-clue"><span class="clue-label">Across</span><a class="retro-button" href="downloads/crossword.opmod" download="crossword.opmod" data-free-choice>Free download</a></div><div class="download-clue"><span class="clue-label">Down</span><a class="retro-button" href="https://ko-fi.com/displayname808" target="_blank" rel="noopener noreferrer" data-donate-choice>Free + donation ♥</a></div></div>
+<p class="download-requirements">Original OP-1 · OPUS core 2.31 or newer.</p>
+<p class="download-availability" id="download-availability" role="status">Crossword is free. Donations are optional.</p>
+<div class="donation-note" id="crossword-donation-note" tabindex="-1" hidden><p>Thank you! Ko-fi opens in a new tab. You can download Crossword here whenever you’re ready.</p><a class="retro-button" href="downloads/crossword.opmod" download="crossword.opmod">Download Crossword</a></div>
+</div></dialog>
+<script src="../script.js" defer></script>
+<script src="../crossword-download.js" defer></script>
+</body>
+</html>

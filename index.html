@@ -3,9 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="0;url=castle/">
-<title>Castle — displayname808</title>
-<script>window.location.replace("castle/" + window.location.search + window.location.hash);</script>
+<meta name="description" content="Castle and Crossword: independent plugins for OPUS on the original OP-1, by displayname808.">
+<title>displayname808 — plugin directory</title>
+<link rel="stylesheet" href="home.css">
+<script>
+const crosswordSections = new Set(['trailer','cheat-sheet','quick-start','controls','modifiers','facts','in-progress','installation','correspondence','probability']);
+if (crosswordSections.has(location.hash.slice(1))) location.replace('crossword/' + location.hash);
+</script>
 </head>
-<body><p><a href="castle/">Open Castle</a></p></body>
+<body>
+<main class="directory">
+
+<div class="file-browser">
+<nav class="file-tree" aria-label="Plugin directory">
+<details class="root-folder" open><summary><span class="folder-icon" aria-hidden="true"></span>displayname808</summary>
+<div class="folder-contents">
+<a class="file-row" href="./"><span class="file-icon" aria-hidden="true"></span>index.html</a>
+<details open><summary><span class="folder-icon" aria-hidden="true"></span>plugins</summary><div class="folder-contents">
+<details open><summary><span class="folder-icon" aria-hidden="true"></span>castle</summary><div class="folder-contents">
+<a class="file-row" href="castle/"><span class="file-icon" aria-hidden="true"></span>index.html</a>
+<a class="file-row" href="assets/castle-in-app.jpg"><span class="file-icon image-icon" aria-hidden="true"></span>screenshot.jpg</a>
+</div></details>
+<details open><summary><span class="folder-icon" aria-hidden="true"></span>crossword</summary><div class="folder-contents">
+<a class="file-row" href="crossword/"><span class="file-icon" aria-hidden="true"></span>index.html</a>
+<a class="file-row" href="crossword/downloads/crossword.opmod" download="crossword.opmod"><span class="file-icon" aria-hidden="true"></span>crossword.opmod</a>
+<a class="file-row" href="assets/grid-overview.webp"><span class="file-icon image-icon" aria-hidden="true"></span>screenshot.webp</a>
+<a class="file-row" href="assets/crossword-trailer.mp4"><span class="file-icon media-icon" aria-hidden="true"></span>trailer.mp4</a>
+<a class="file-row" href="assets/crossword-cheat-sheet.png" target="_blank" rel="noopener noreferrer"><span class="file-icon image-icon" aria-hidden="true"></span>cheat-sheet.png</a>
+</div></details>
+</div></details>
+<details open><summary><span class="folder-icon" aria-hidden="true"></span>contact</summary><div class="folder-contents">
+<a class="file-row" href="mailto:displayname808@gmail.com"><span class="file-icon" aria-hidden="true"></span>email</a>
+<a class="file-row" href="https://www.instagram.com/displayname808/" target="_blank" rel="noopener noreferrer"><span class="file-icon" aria-hidden="true"></span>instagram</a>
+<a class="file-row" href="https://discord.com/invite/CW2MngTU3Z" target="_blank" rel="noopener noreferrer"><span class="file-icon" aria-hidden="true"></span>opus-discord</a>
+</div></details>
+<details open><summary><span class="folder-icon" aria-hidden="true"></span>donate</summary><div class="folder-contents">
+<a class="file-row" href="https://ko-fi.com/displayname808" target="_blank" rel="noopener noreferrer"><span class="file-icon" aria-hidden="true"></span>ko-fi</a>
+</div></details>
+</div></details>
+</nav>
+
+</div>
+
+</main>
+</body>
 </html>

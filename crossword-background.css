@@ -1,0 +1,1 @@
+body{background:#fff url('assets/crossword-background.svg') repeat;background-size:760px 880px}.newspaper{background:rgba(255,255,255,.35)}.hero-copy h2{font-size:clamp(38px,4.4vw,62px);line-height:1.03;letter-spacing:-.06em;margin-top:10px}@media(max-width:680px){body{background-size:560px auto}.hero-copy h2{font-size:43px}.newspaper{background:rgba(255,255,255,.6)}}

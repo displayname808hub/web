@@ -1,0 +1,24 @@
+:root{--paper:#fff;--ink:#302418;--muted:#67513b;--rule:#b6a174}
+body{background-color:#fff;background-image:none;font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+.newspaper{background-color:var(--paper);background-image:none;border-left:0;border-right:0}
+.preview-notice{background:#302418;color:#fff0bc}.preview-notice>span{color:#e3ce96}
+.masthead h1,h2,h3,.footer-brand{font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:-.065em}
+.masthead h1{font-family:'Arial Black',Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:-.085em}
+.edition,.strap>span,.small-caps,figcaption,.study-readout{font-family:Arial,Helvetica,sans-serif;letter-spacing:0}
+.edition{font-weight:700}.edition a{font-weight:900}.strap p{font-family:Georgia,'Times New Roman',serif;font-size:21px}
+.hero-copy h2 span{color:var(--ink)}.hero-copy h2{font-weight:900}.hero-copy>p{color:#4e3c29;font-size:19px}
+.hero-copy .hero-footnote{font-size:14px}nav{font-family:Arial,Helvetica,sans-serif}
+.product-mark i{background:var(--ink)}.product-mark i:nth-child(2){background:var(--ink)}
+.score-art{background:transparent;padding:25px 0 15px}.tile-composition{transform:none;margin:5px 0 26px;background:var(--ink);border-color:var(--ink)}
+.art-tile{background:var(--paper);font-family:Arial,Helvetica,sans-serif}.art-tile.block{background:var(--ink)}.art-tile.active{background:var(--blue);color:#fff}
+.score-art .score-caption{font:16px/1.5 Georgia,'Times New Roman',serif;color:var(--ink)}
+.score-caption button{font:700 14px Arial,Helvetica,sans-serif;border-radius:0;color:var(--ink);padding:11px 18px;background:transparent}
+.score-caption button:hover{background:var(--ink);color:var(--paper)}
+.ink-button{border-radius:0;background:var(--ink);color:var(--paper)}.ink-button:hover{background:#59422c;border-color:#59422c;color:var(--paper)}
+.small-button{background:transparent;color:var(--ink)}a:hover{color:#73502a}
+.spec-strip strong{font-family:Arial,Helvetica,sans-serif;font-weight:700}.spec-strip span,.section-heading p,.release-note{font-family:Arial,Helvetica,sans-serif}
+.feature-columns p{color:#58432e}.feature-columns strong{color:var(--ink)}
+thead th{background:#ebd9a4}table{font-family:Arial,Helvetica,sans-serif}.main-capture{background:#302418}.capture-pair img{border-color:#302418}
+.main-capture figcaption{color:#efdaa4}.release-note{border-left-color:var(--ink)}.classifieds .small-caps{color:var(--muted)}
+.footer-brand span,footer p{font-family:Arial,Helvetica,sans-serif}.section-heading h2{font-weight:900}
+@media(max-width:680px){.score-art{margin:0;padding:12px 0}.tile-composition{width:100%;max-width:none;margin:0 0 22px}.hero-copy>p{font-size:18px}.strap p{font-size:19px}.newspaper{border:0}.score-caption{gap:12px}.score-caption button{flex-shrink:0}}
